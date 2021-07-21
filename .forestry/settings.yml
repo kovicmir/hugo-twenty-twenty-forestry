@@ -4,10 +4,14 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: directory
+  path: content/about
+  label: About
+  create: none
+  match: "*"
 - type: document
   path: document1
   label: Document 1
-  match: "**/*"
 - type: document
   path: README.md
   label: README
@@ -23,11 +27,6 @@ sections:
   - post
 - type: heading
   label: Others Pages
-- type: directory
-  path: content/about
-  label: About
-  create: none
-  match: "*"
 - type: directory
   path: content/contact
   label: Contact
